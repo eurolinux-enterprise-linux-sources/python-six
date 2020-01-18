@@ -10,7 +10,7 @@
 
 Name:           python-six
 Version:        1.3.0
-Release:        4%{?dist}
+Release:        3%{?dist}
 Summary:        Python 2 and 3 compatibility utilities
 
 Group:          Development/Languages
@@ -101,8 +101,11 @@ popd
 
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3.0-4
-- Mass rebuild 2013-12-27
+* Thu Jun 13 2013 Endi S. Dewata <edewata@redhat.com> - 1.3.0-3
+- Reenable tests since dependencies have been added.
+
+* Tue Jun 11 2013 Martin Kosek <mkosek@redhat.com> - 1.3.0-2
+- Do not run build tests due to missing dependencies
 
 * Thu Mar 21 2013 David Malcolm <dmalcolm@redhat.com> - 1.3.0-1
 - 1.3.0
