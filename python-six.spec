@@ -9,8 +9,8 @@
 %endif
 
 Name:           python-six
-Version:        1.9.0
-Release:        2%{?dist}
+Version:        1.3.0
+Release:        4%{?dist}
 Summary:        Python 2 and 3 compatibility utilities
 
 Group:          Development/Languages
@@ -101,14 +101,6 @@ popd
 
 
 %changelog
-* Thu May 14 2015 Matej Stuchlik <mstuchli@redhat.com> - 1.9.0-2
-- Bump for RHEL7
-Resolves: rhbz#1185409
-
-* Wed May 06 2015 Matej Stuchlik <mstuchli@redhat.com> - 1.9.0-1
-- Update to 1.9.0
-Resolves: rhbz#1185409
-
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3.0-4
 - Mass rebuild 2013-12-27
 

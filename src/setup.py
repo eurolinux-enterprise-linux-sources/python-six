@@ -1,9 +1,4 @@
-from __future__ import with_statement
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from distutils.core import setup
 
 import six
 
@@ -16,8 +11,12 @@ six_classifiers = [
     "Topic :: Utilities",
 ]
 
-with open("README", "r") as fp:
+fp = open("README", "r")
+try:
     six_long_description = fp.read()
+finally:
+    fp.close()
+
 
 setup(name="six",
       version=six.__version__,
@@ -27,6 +26,5 @@ setup(name="six",
       py_modules=["six"],
       description="Python 2 and 3 compatibility utilities",
       long_description=six_long_description,
-      license="MIT",
       classifiers=six_classifiers
       )
